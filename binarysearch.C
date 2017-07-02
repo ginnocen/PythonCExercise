@@ -6,9 +6,11 @@ int binarysearch(int value=4){
   void init();
   int counter_iterations=0;
   init();
+  
   int indexMin=0;
   int indexMax=Narray;
   int centralindex=indexMin+int((indexMax-indexMin)/2);
+  
   cout<<"indexMin="<<indexMin<<endl;
   cout<<"indexMax="<<indexMax<<endl;    
   cout<<"centralindex="<<centralindex<<endl;

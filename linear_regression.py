@@ -47,9 +47,13 @@ intercept=average_y-coefficient*average_x
 
 ########### test the r-value of the linear fit ###########
 average_y_pred=sum(Y_pred)/len(Y_pred)
-
 SStot=sum([(Y_test[i]-average_y_pred)*(Y_test[i]-average_y) for i in range(len(Y_test))])
 SSres=sum([(Y_test[i]-Y_pred[i])*(Y_test[i]-Y_pred[i]) for i in range(len(Y_test))])
 Rvalue=1-SSres/SStot
 print Rvalue
 print('Variance score: %.2f' % r2_score(Y_test, Y_pred))
+
+
+
+
+
